@@ -8,6 +8,7 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
   <div id="wrapper">
@@ -23,7 +24,7 @@
               <li><button type="button" class="btn">ABOUT US</button></li>
               <li><button type="button" class="btn">SURVEYS</button></li>
               <li><button type="button" class="btn">LOGIN</button></li>
-              <li><button type="button" class="btn">GET STRATED</button></li>
+              <li><button type="button" class="btn">Get Started</button></li>
             </ul>
           </div>
       </nav>
@@ -73,12 +74,16 @@
           <div class="third-section-right third-section-text">
             <h4>No more tradeoffs</h4>
             <p>Get the efficacy of traditional braces, with the aesthetics superior to Invisalign in a single product, all in a self-driving personalized device that is made specifically for you and your smile.</p>
+            <div class="third-section-more">
+              <h4>Learn more</h4>
+              <a href="#" onclick="openMore()"><img src="img/plus.png"></a>
+            </div>
           </div>
         </div>                        
       </div>
       <div class="expanded">
         <div class="btn-close" align="right">
-          <a href="#"><img src="img/close.png"></a>
+          <a href="#" onclick="closeMore()"><img src="img/close.png"></a>
         </div>
         <div class="two-sides">
           <div class="two-sides-left">
@@ -119,7 +124,7 @@
           </div>
         </div>
       </div>
-      <hr>
+      <hr class="hr-more">      
       <div class="fourth-section" align="left">
         <h3>Sound Science + Innovation</h3>
         <br><br>
